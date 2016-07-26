@@ -117,27 +117,27 @@
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-		    	<div class="item active">
+		    	<figure class="item active">
 		      		<img src="img/depoimentos/depo1.png">
-		      		<div class="carousel-caption">
+		      		<figcaption class="carousel-caption">
 						<h3>Michael Jordan</h3>
 						<p> Gostei muito do trabalho!</p>
-		      		</div>
-		    	</div>
-		    	<div class="item">
+		      		</figcaption>
+		    	</figure >
+		    	<figure class="item">
 					<img src="img/depoimentos/depo2.png">
-					<div class="carousel-caption">
+					<figcaption class="carousel-caption">
 						<h3>Elliot Landin</h3>
 						<p>Excelente empresa e serviços prestados!</p>
-					</div>
-		    	</div>
-		    	<div class="item">
+					</figcaption>
+		    	</figure>
+		    	<figure class="item">
 					<img src="img/depoimentos/depo3.png">
-					<div class="carousel-caption">
+					<figcaption class="carousel-caption">
 						<h3>Kevin Pierce</h3>
 						<p>Recomendo a todos!</p>
-					</div>
-		    	</div>
+					</figcaption>
+		    	</figure>
 			</div>
 
 			<!-- Controls -->
@@ -150,6 +150,51 @@
 				<span class="sr-only">Proximo</span>
 			</a>
 		</div>
+	</section>
+	<section class="container">
+		<h2>Vídeo Institucional</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/zwvsa7DzzHY" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section>
+	<section class="container">
+		<h2>Contato</h2>
+		<p>Entre em contato conosco</p>
+		<form>
+			<div class="form-group">
+				<label for="contato-name">Nome:</label>
+				<input class="form-control" type="text" id="contato-name" placeholder="Digite seu nome">
+			</div>
+			<div class="form-group">
+				<label for="contato-email">Email:</label>
+				<div class="input-group">
+					<div class="input-group-addon">@</div>
+					<input class="form-control" type="email" id="contato-email" placeholder="Digite seu email">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="grupo-radio">
+					<div class="radio">
+						<label>
+							<input type="radio" name="tipo-pessoa" checked>Mutante
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="tipo-pessoa">Frangolino
+						</label>
+					</div>
+				</div><!--
+
+				--><select class="contato-select form-control">
+					<option disabled selected>Selecione seu Shape</option>
+					<option>Fibra</option>
+					<option>Agua com Musculo</option>
+					<option>Body Builder</option>
+				</select>
+				<button class="btn btn-primary" type="submit">Enviar</button>
+			</div>
+		</form>
 	</section>
 </body>
 </html>
