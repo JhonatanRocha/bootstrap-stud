@@ -5,12 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/custom-style.css">
-	<script src="bootstrap/js/jquery-1.12.2.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"/></script>
 </head>
 
 <body>
-	<section class="container">
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Mutant Academy</a>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#sobre-nos">Sobre Nós</a></li>
+						<li><a href="#nossos-projetos">Nossos Projetos</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#video-institucional">Video Institucional</a></li>
+						<li><a href="#contact">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="mutant-academy-banner">
+			<h1>Mutant Academy</h1>
+			<p>Derrubando arvores do Ibirapuera since 2015</p>
+			<a href="#contact" class="page-scroll btn btn-primary btn-lg">Me ajuda que eu to doente</a>
+		</div>
+	</header>
+
+	<section id="sobre-nos" class="container">
 		<h2>Sobre Nós</h2>
 		<img class="img-responsive" src="img/empresa.jpg"/>
 		
@@ -19,31 +47,31 @@
 				<div class="panel-heading">
 					<h3 class="panel-title" data-toggle="collapse" data-target="#sub-titulo1" data-parent="#paineis-sobre">Subtitulo 1<h3>
 				</div>
-				
+
 				<div id="sub-titulo1" class="collapse">
 					<div class="panel-body">
 						<p>Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="panel panel-default">	
 				<div class="panel-heading">
 					<h3 class="panel-title" data-toggle="collapse" data-target="#sub-titulo2" data-parent="#paineis-sobre">Subtitulo 2<h3>
 				</div>
-				
+
 				<div id="sub-titulo2" class="collapse">
 					<div class="panel-body">
 						<p>Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="panel panel-default">	
 				<div class="panel-heading">
 					<h3 class="panel-title" data-toggle="collapse" data-target="#sub-titulo3" data-parent="#paineis-sobre">Subtitulo 3<h3>
 				</div>
-				
+
 				<div id="sub-titulo3" class="collapse">
 					<div class="panel-body">	
 						<p>Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum Loreipsum</p>
@@ -60,7 +88,7 @@
 		</div>
 	</div>
 
-	<section class="container">
+	<section id="nossos-projetos" class="container">
 		<h2>Nossos Projetos</h2>
 
 		<figure class="thumbnail">
@@ -104,7 +132,7 @@
 		</figure>
 	</section>
 
-	<section>
+	<section id="depoimentos">
 		<h2 class="container titulo-depoimentos">Depoimentos dos nossos Clientes</h2>
 
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -117,27 +145,27 @@
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-		    	<figure class="item active">
-		      		<img src="img/depoimentos/depo1.png">
-		      		<figcaption class="carousel-caption">
+				<figure class="item active">
+					<img src="img/depoimentos/depo1.png">
+					<figcaption class="carousel-caption">
 						<h3>Michael Jordan</h3>
 						<p> Gostei muito do trabalho!</p>
-		      		</figcaption>
-		    	</figure >
-		    	<figure class="item">
+					</figcaption>
+				</figure >
+				<figure class="item">
 					<img src="img/depoimentos/depo2.png">
 					<figcaption class="carousel-caption">
 						<h3>Elliot Landin</h3>
 						<p>Excelente empresa e serviços prestados!</p>
 					</figcaption>
-		    	</figure>
-		    	<figure class="item">
+				</figure>
+				<figure class="item">
 					<img src="img/depoimentos/depo3.png">
 					<figcaption class="carousel-caption">
 						<h3>Kevin Pierce</h3>
 						<p>Recomendo a todos!</p>
 					</figcaption>
-		    	</figure>
+				</figure>
 			</div>
 
 			<!-- Controls -->
@@ -151,13 +179,15 @@
 			</a>
 		</div>
 	</section>
-	<section class="container">
+
+	<section id="video-institucional" class="container">
 		<h2>Vídeo Institucional</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 			<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/zwvsa7DzzHY" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</section>
-	<section class="container">
+
+	<section id="contact" class="container">
 		<h2>Contato</h2>
 		<p>Entre em contato conosco</p>
 		<form>
@@ -186,7 +216,7 @@
 					</div>
 				</div><!--
 
-				--><select class="contato-select form-control">
+			 --><select class="contato-select form-control">
 					<option disabled selected>Selecione seu Shape</option>
 					<option>Fibra</option>
 					<option>Agua com Musculo</option>
@@ -207,5 +237,9 @@
 			Email: contato.bodybuilder@mutantacademy.com
 		</address>
 	</footer>
+
+	<script src="bootstrap/js/jquery-1.12.2.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"/></script>
+	<script src="bootstrap/js/navbar-animation-fix.js"/></script>
 </body>
 </html>
